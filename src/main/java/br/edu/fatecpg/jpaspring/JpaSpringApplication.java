@@ -32,6 +32,7 @@ public class JpaSpringApplication implements CommandLineRunner {
 
         ObjectMapper mapper = new ObjectMapper();
 
+
         Optional<Endereco> existente = enderecoRepository.findByCep(cep);
 
         if(existente.isPresent()){
