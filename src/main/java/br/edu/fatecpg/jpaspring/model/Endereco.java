@@ -1,7 +1,9 @@
 package br.edu.fatecpg.jpaspring.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 @Entity
 @Table(name = "enderecos")
 
